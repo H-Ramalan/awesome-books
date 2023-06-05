@@ -7,10 +7,18 @@
 .new-book {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin: 10px;
+  width: 50%;
 }
+
 .input {
-  margin-top: 10px;
+  margin: 10px 0;
   padding: 10px;
+}
+
+.book {
+  margin-bottom: 10px;
+}
+
+.awesome-books-list {
+  margin-bottom: 10px;
 }

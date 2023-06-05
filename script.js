@@ -16,7 +16,7 @@ const clearFields = () => {
 
 const addbook = (event) => {
   let newbook = {
-    id: Date.now.toString(),
+    // id: Date.now().toString(),
     title: document.querySelector(".title").value,
     author: document.querySelector(".author").value,
   };
@@ -41,8 +41,12 @@ const addbook = (event) => {
 add.addEventListener("click", addbook);
 
 const deleteButtons = document.querySelectorAll(".remove-book");
-deleteButtons.forEach((button, index) => {
-  button.addEventListener("click", () => {
-    books.splice(index, 1);
+deleteButtons.forEach(() => {
+  button.addEventListener("click", (e) => {
+    if (e.target.classList.contains("remove-book")) {
+      e.parentElement.remove();
+    }
   });
 });
+
+// console.log(newBook.id);
