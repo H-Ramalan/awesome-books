@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="all-books">
+      <h1>All awesome books</h1>
+      <table id="bookTable">
+        <thead>
+          <tr></tr>
+        </thead>
+        <tbody id="bookList"></tbody>
+      </table>
+      <hr />
+    </div>
+
+    <div class="add-book-box">
+      <h2>Add book</h2>
+      <form id="bookForm" class="book-form">
+        <input
+          type="text"
+          id="title"
+          required
+          placeholder="Title"
+          class="input"
+        />
+
+        <input
+          type="text"
+          id="author"
+          required
+          placeholder="Author"
+          class="input"
+        />
+        <button type="submit" class="button add">Add</button>
+      </form>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
