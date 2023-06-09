@@ -97,6 +97,10 @@ hr {
   padding: 10px;
 }
 
+.menu {
+  display: none;
+}
+
 .link-list {
   display: flex;
   list-style: none;
@@ -152,6 +156,86 @@ nav ul li:nth-child(2) {
   line-height: 40px;
 }
 
+.ham {
+  display: none;
+}
+
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .header {
+    margin: 2rem 1rem;
+  }
+
+  #bookTable {
+    width: 80%;
+  }
+
+  .footer {
+    margin: 3rem 2rem;
+  }
+
+  .footer-note {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .link-list {
+    display: none;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .ham {
+    display: block;
+    height: 20px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .link-list-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .close-button {
+    height: 20px;
+    float: right;
+    color: black;
+    /* filter: grayscale(100%); */
+  }
+
+  nav ul li:nth-child(2) {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: none;
+    border-left: none;
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  .list {
+    margin: 15px;
+  }
+
+  .contact {
+    margin: 15px;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+  }
 }
