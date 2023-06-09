@@ -215,6 +215,7 @@ nav ul li:nth-child(2) {
     height: 20px;
     float: right;
     color: black;
+
     /* filter: grayscale(100%); */
   }
 
