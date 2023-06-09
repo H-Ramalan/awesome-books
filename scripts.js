@@ -93,19 +93,3 @@ const contactPage = (e) => {
   contact.classList.remove("hidden");
   bookList.classList.add("hidden");
   addBookForm.classList.add("hidden");
-};
-
-list.addEventListener("click", booksListPage);
-addBookLink.addEventListener("click", addBookPage);
-contactLink.addEventListener("click", contactPage);
-
-const dateBox = document.querySelector("date-box");
-
-function updateDate() {
-  const date = new Date();
-  dateBox.innerHTML = date;
-}
-
-updateDate();
-
-setInterval(updateDate, 1000);

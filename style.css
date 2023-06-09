@@ -63,6 +63,7 @@ tr:nth-child(odd) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 8rem 0;
 }
 
 hr {
@@ -232,10 +233,5 @@ nav ul li:nth-child(2) {
 
   .contact {
     margin: 15px;
-  }
-
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
   }
 }
